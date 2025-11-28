@@ -3,7 +3,7 @@
 		@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,75..125,100..900;1,75..125,100..900");
 		
 		text {
-			font-size: 12.5px;
+			font-size: 10px;
 			font-weight: 800;
 			font-family: Archivo;
 		}
@@ -29,4 +29,5 @@
 	<path d="M9,5 H15 V7 H17 V9 H19 V15 H17 V17 H15 V19 H9 V17 H7 V15 H5 V9 H7 V7 H9 Z" fill="#9ed" />
 	<path d="M7,11 H9 V15 H15 V11 H17 V13 H7 Z" fill="#000" />
 	<text x="24" y="13" text-anchor="start" dominant-baseline="middle" fill="#fff">Vibe Check</text>
+
 </svg>
