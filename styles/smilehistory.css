@@ -1,0 +1,201 @@
+/* Order: @import, :root, *, Elements, Classes, IDs, Attributes, Selectors, Nesting Selectors, Pseudo-Elements, Pseudo-Classes, At-Rules */
+/* Order: Position, Size, Shape, Color, Function */
+
+#entry_list {
+	margin-bottom: 1vh;
+	padding: 2vh;
+	max-height: 30vh;
+	display: flex;
+	flex-direction: column;
+	gap: 1vh;
+	overflow-y: scroll;
+	scrollbar-width: unset;
+	border-radius: 1vh;
+	color: var(--fill);
+	background: var(--blue);
+	/* mask-image: linear-gradient(var(--transparent) 90%, var(--blue) 100%); */
+}
+
+article {
+	padding: 2vh;
+	display: flex;
+	align-items: center;
+	border-radius: 0.5vh;
+	outline: 0.25vh solid var(--fill);
+	outline-offset: -0.25vh;
+	cursor: pointer;
+
+	& > div {
+		width: 100%;
+		flex-direction: column;
+		overflow: hidden;
+		white-space: nowrap;
+		mask-image: linear-gradient(to right, var(--blue) 90%, var(--transparent) 100%);
+
+		& div {
+			align-self: flex-start;
+			gap: 1vh;
+		}
+	}
+
+	& p {
+		font-size: 1.5vh;
+		font-family: var(--mono-font);
+		user-select: text;
+	}
+}
+
+svg {
+	width: 2vh;
+	height: 2vh;
+	border-radius: 1vh;
+	outline: 0.25vh solid var(--fill);
+	outline-offset: -0.25vh;
+}
+
+grid {
+	padding: 2vh;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5vh;
+	border-radius: 1vh;
+	background: var(--fill);
+
+	& > h4 {
+		font-family: var(--mono-font);
+	}
+}
+
+row {
+	display: flex;
+	gap: 0.5vh;
+	font-family: var(--mono-font);
+}
+
+day {
+	width: 2vh;
+	height: 2vh;
+	display: flex;
+	border-radius: 0.5vh;
+	outline: 0.25vh solid var(--content);
+	outline-offset: -0.25vh;
+
+	&::before {
+		position: relative;
+		transform: translateX(1.5vh) translateY(-3.5vh);
+		padding: 2vh 1vh;
+		display: none;
+		align-items: center;
+		content: "Empty";
+		white-space: nowrap;
+		border-radius: 1vh;
+		color: var(--fill);
+		background: var(--content);
+	}
+}
+
+day:hover::before {
+	display: flex;
+}
+
+#grid-2026 #row-mon day:nth-child(-n + 1),
+#grid-2026 #row-tue day:nth-child(-n + 1),
+#grid-2026 #row-wed day:nth-child(-n + 1),
+#grid-2026 #row-fri day:nth-last-child(-n + 1),
+#grid-2026 #row-sat day:nth-last-child(-n + 1),
+#grid-2026 #row-sun day:nth-last-child(-n + 1) {
+	outline: none;
+	background: color-mix(in srgb, var(--transparent) 60%, var(--content) 40%);
+
+	&:hover::before {
+		display: none;
+	}
+}
+
+.open-article > div {
+	gap: 1vh;
+	overflow: visible;
+	white-space: normal;
+	mask-image: none;
+}
+
+.history {
+	gap: 2vh;
+	overflow: scroll;
+	mask-image: linear-gradient(to right, var(--white) 90%, var(--transparent) 100%);
+}
+
+.legend {
+	align-items: center;
+	gap: 1vh;
+	font-family: var(--mono-font);
+}
+
+.level-1 {
+	background: var(--level-1);
+
+	&::before {
+		content: "Happiness Score 0%";
+		color: var(--level-1);
+	}
+}
+
+.level-2 {
+	background: var(--level-2);
+
+	&::before {
+		content: "Happiness Score 20%";
+		color: var(--level-2);
+	}
+}
+
+.level-3 {
+	background: var(--level-3);
+
+	&::before {
+		content: "Happiness Score 40%";
+		color: var(--level-3);
+	}
+}
+
+.level-4 {
+	background: var(--level-4);
+
+	&::before {
+		content: "Happiness Score 60%";
+		color: var(--level-4);
+	}
+}
+
+.level-5 {
+	background: var(--level-5);
+
+	&::before {
+		content: "Happiness Score 80%";
+		color: var(--level-5);
+	}
+}
+
+.level-6 {
+	background: var(--level-6);
+
+	&::before {
+		content: "Happiness Score 100%";
+		color: var(--level-6);
+	}
+}
+
+::-webkit-scrollbar {
+	width: 1vh;
+}
+
+::-webkit-scrollbar-track {
+	margin: 2vh;
+	border-radius: 2vh;
+	background: color-mix(in srgb, var(--transparent) 60%, var(--content) 40%);
+}
+ 
+::-webkit-scrollbar-thumb {
+	border-radius: 2vh;
+	background: var(--accent);
+}

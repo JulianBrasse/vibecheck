@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 72">
+	<style>
+		@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,75..125,100..900;1,75..125,100..900");
+		
+		text {
+			font-size: 12.5px;
+			font-weight: 800;
+			font-family: Archivo;
+		}
+	</style>
+	<defs>
+		<radialGradient id="bleu" fx="0%" fy="0%" cx="50%" cy="50%" r="100%">
+			<stop offset="0%" stop-color="#00f"/>
+			<stop offset="100%" stop-color="#0000"/>
+		</radialGradient>
+		<radialGradient id="vert" fx="40%" fy="110%" cx="50%" cy="50%" r="100%">
+			<stop offset="0%" stop-color="#0f0c"/>
+			<stop offset="100%" stop-color="#0000"/>
+		</radialGradient>
+		<radialGradient id="cyan" fx="110%" fy="40%" cx="50%" cy="50%" r="100%">
+			<stop offset="0%" stop-color="#0ffa"/>
+			<stop offset="100%" stop-color="#0000"/>
+		</radialGradient>
+	</defs>
+	<rect width="120" height="72" rx="0" fill="#9ed"/>
+	<rect width="120" height="72" rx="0" fill="url(#bleu)"/>
+	<rect width="120" height="72" rx="0" fill="url(#vert)"/>
+	<rect width="120" height="72" rx="0" fill="url(#cyan)"/>
+	<path d="M9,5 H15 V7 H17 V9 H19 V15 H17 V17 H15 V19 H9 V17 H7 V15 H5 V9 H7 V7 H9 Z" fill="#9ed"/>
+	<path d="M7,11 H9 V15 H15 V11 H17 V13 H7 Z" fill="#000"/>
+	<text x="24" y="13" text-anchor="start" dominant-baseline="middle" fill="#fff">Vibe Check</text>
+</svg>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-CH">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="initial-scale=1, user-scalable=no, viewport-fit=cover" />
+
+		<meta name="mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="theme-color" content="#def" media="(prefers-color-scheme: light)" />
+		<meta name="theme-color" content="#136" media="(prefers-color-scheme: dark)" />
+
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link rel="canonical" href="https://vibecheck.ch" />
+		<link rel="icon" href="/content/favicon.svg" />
+		<link rel="apple-touch-icon" href="/content/icon_768.png" />
+		<link rel="apple-touch-startup-image" href="/content/favicon_768.png">
+		<link rel="manifest" href="/scripts/manifest.json" />
+		<link rel="stylesheet" href="/styles/main.css" />
+
+		<script type="module" src="/scripts/main.js" defer></script>
+		<script type="module" src="/scripts/authentication.js" defer></script>
+		
+		<title>VibeCheck</title>
+		<base href="https://vibecheck.ch" />
+		<meta name="application-name" content="VibeCheck" />
+		<meta name="description" content="Track your happiness with VibeCheck and get suggestions on how to improve it." />
+		<meta name="keywords" content="Vibe, Happy, Mood, Smile, Joy, Check, Stats, Counter, Meter, Tracker, Diary, Journal, Wellness" />
+
+		<meta property="og:url" content="https://vibecheck.ch" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="VibeCheck" />
+		<meta property="og:description" content="Track your happiness with VibeCheck and get suggestions on how to improve it." />
+		<meta property="og:image" content="https://vibecheck.ch/content/brand.png" />
+	</head>
+	<body>
+		<header>
+			<div class="brand">
+				<img class="logo" src="/content/symbol.svg" alt="Vibey our smiley face icon.">
+				<h1 class="name">VibeCheck</h1>
+			</div>
+			<nav>
+				<button class="primary-button" id="sign_in_open_button">Sign In</button>
+				<button class="secondary-button" id="sign_up_open_button">Sign Up</button>
+			</nav>
+		</header>
+		<main>
+			<section>
+				<p>Track your happiness with VibeCheck and get suggestions on how to improve it.</p>
+			</section>
+		</main>
+		<footer>
+			<span id="version_text">©VibeCheck</span>
+		</footer>
+		<dialog id="sign_in_dialog">
+			<h3>Sign In</h3>
+			<form>
+				<output id="sign_in_message">Enter your email and password.</output>
+				<div class="input-field"><input type="email" id="sign_in_email_input" placeholder="Email" autocomplete="email"/></div>
+				<div class="input-field"><input type="password" id="sign_in_password_input" placeholder="Password" autocomplete="current-password"/></div>
+				<button class="primary-button" type="button" id="sign_in_button">Sign In</button>
+			</form>
+			<button class="close-button" type="button" id="sign_in_close_button">Close</button>
+		</dialog>
+		<dialog id="sign_up_dialog">
+			<h3>Sign Up</h3>
+			<form>
+				<output id="sign_up_message">Enter your details.</output>
+				<div class="input-field"><input type="email" id="sign_up_email_input" placeholder="Email" autocomplete="email"/></div>
+				<div class="input-field"><input type="password" id="sign_up_password_input" placeholder="Password" autocomplete="new-password"/></div>
+				<div class="input-field"><input type="text" id="name_input" placeholder="First Name" autocomplete="given-name"/></div>
+				<div class="input-field"><input type="number" id="age_input" placeholder="Age" autocomplete="off"/></div>
+				<button class="primary-button" type="button" id="sign_up_button">Sign Up</button>
+			</form>
+			<button class="close-button" type="button" id="sign_up_close_button">Close</button>
+		</dialog>
+	</body>
+</html>

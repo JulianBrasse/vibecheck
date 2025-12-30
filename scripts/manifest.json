@@ -1,0 +1,145 @@
+{
+	"name": "VibeCheck",
+	"short_name": "VibeCheck",
+	"id": "https://vibecheck.ch",
+	"start_url": "/dashboard?version=1.0",
+	"scope": "https://vibecheck.ch",
+	"description": "Track your happiness with VibeCheck and get suggestions on how to improve it.",
+	"categories": ["health", "lifestyle", "utilities"],
+	"icons": [
+		{
+		"src": "https://vibecheck.ch/content/icon_192.png",
+		"type": "image/png",
+		"purpose": "maskable",
+		"sizes": "192x192"
+		},
+		{
+		"src": "https://vibecheck.ch/content/icon_384.png",
+		"type": "image/png",
+		"purpose": "maskable",
+		"sizes": "384x384"
+		},
+		{
+		"src": "https://vibecheck.ch/content/icon_768.png",
+		"type": "image/png",
+		"purpose": "maskable",
+		"sizes": "768x768"
+		},
+		{
+		"src": "https://vibecheck.ch/content/icon.svg",
+		"type": "image/svg",
+		"purpose": "maskable",
+		"sizes": "any"
+		},
+		{
+		"src": "https://vibecheck.ch/content/favicon_16.png",
+		"type": "image/png",
+		"purpose": "any",
+		"sizes": "16x16"
+		},
+		{
+		"src": "https://vibecheck.ch/content/favicon_192.png",
+		"type": "image/png",
+		"purpose": "any",
+		"sizes": "192x192"
+		},
+		{
+		"src": "https://vibecheck.ch/content/favicon_384.png",
+		"type": "image/png",
+		"purpose": "any",
+		"sizes": "384x384"
+		},
+		{
+		"src": "https://vibecheck.ch/content/favicon_768.png",
+		"type": "image/png",
+		"purpose": "any",
+		"sizes": "768x768"
+		},
+		{
+		"src": "https://vibecheck.ch/content/favicon.svg",
+		"type": "image/svg",
+		"purpose": "any",
+		"sizes": "any"
+		}
+	],
+	"screenshots": [
+		{
+		"src": "https://vibecheck.ch/content/screenshot_vertical_light.png",
+		"label": "Preview of VibeCheck on Mobile in Light Mode",
+		"type": "image/png",
+		"sizes": "563x1080"
+		},
+		{
+		"src": "https://vibecheck.ch/content/screenshot_vertical_light_2.png",
+		"label": "Preview of VibeCheck on Mobile in Light Mode",
+		"type": "image/png",
+		"sizes": "563x1080"
+		},
+		{
+		"src": "https://vibecheck.ch/content/screenshot_vertical_light_3.png",
+		"label": "Preview of VibeCheck on Mobile in Light Mode",
+		"type": "image/png",
+		"sizes": "563x1080"
+		},
+		{
+		"src": "https://vibecheck.ch/content/screenshot_vertical_dark.png",
+		"label": "Preview of VibeCheck on Mobile in Dark Mode",
+		"type": "image/png",
+		"sizes": "563x1080"
+		},
+		{
+		"src": "https://vibecheck.ch/content/screenshot_vertical_dark_2.png",
+		"label": "Preview of VibeCheck on Mobile in Dark Mode",
+		"type": "image/png",
+		"sizes": "563x1080"
+		},
+		{
+		"src": "https://vibecheck.ch/content/screenshot_vertical_dark_3.png",
+		"label": "Preview of VibeCheck on Mobile in Dark Mode",
+		"type": "image/png",
+		"sizes": "563x1080"
+		},
+		{
+		"src": "https://vibecheck.ch/content/screenshot_horizontal_light.png",
+		"label": "Preview of VibeCheck on Desktop in Light Mode",
+		"type": "image/png",
+		"sizes": "1920x1080"
+		},
+		{
+		"src": "https://vibecheck.ch/content/screenshot_horizontal_light_2.png",
+		"label": "Preview of VibeCheck on Desktop in Light Mode",
+		"type": "image/png",
+		"sizes": "1920x1080"
+		},
+		{
+		"src": "https://vibecheck.ch/content/screenshot_horizontal_light_3.png",
+		"label": "Preview of VibeCheck on Desktop in Light Mode",
+		"type": "image/png",
+		"sizes": "1920x1080"
+		},
+		{
+		"src": "https://vibecheck.ch/content/screenshot_horizontal_dark.png",
+		"label": "Preview of VibeCheck on Desktop in Dark Mode",
+		"type": "image/png",
+		"sizes": "1920x1080"
+		},
+		{
+		"src": "https://vibecheck.ch/content/screenshot_horizontal_dark_2.png",
+		"label": "Preview of VibeCheck on Desktop in Dark Mode",
+		"type": "image/png",
+		"sizes": "1920x1080"
+		},
+		{
+		"src": "https://vibecheck.ch/content/screenshot_horizontal_dark_3.png",
+		"label": "Preview of VibeCheck on Desktop in Dark Mode",
+		"type": "image/png",
+		"sizes": "1920x1080"
+		}
+	],
+	"display_override": ["standalone", "fullscreen"],
+	"display": "minimal-ui",
+	"orientation": "natural",
+	"launch_handler": {"client_mode": "navigate-existing"},
+	"background_color": "#9ed",
+	"theme_color": "#9ed"
+}
